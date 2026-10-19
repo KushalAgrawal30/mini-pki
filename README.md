@@ -50,6 +50,7 @@ MiniPKI Root CA            self-signed trust anchor, ECC P-384, 10 years; key us
 Requires Python 3.10+, Node 18+ and OpenSSL.
 
 ```bash
+git clone https://github.com/KushalAgrawal30/mini-pki.git && cd mini-pki
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cd frontend && npm install && npm run build && cd ..
