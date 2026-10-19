@@ -1,0 +1,29 @@
+:root { --fg:#1d2330; --muted:#5b6475; --bg:#f6f7fb; --card:#fff; --line:#dfe3ec; --acc:#2856d8; --ok:#1d7a46; --bad:#b42318; }
+* { box-sizing:border-box }
+body { margin:0; font:15px/1.5 system-ui, sans-serif; color:var(--fg); background:var(--bg) }
+nav { background:#141a2b; padding:12px 20px; display:flex; gap:18px; align-items:center; flex-wrap:wrap }
+nav a, nav button { color:#cdd6f4; text-decoration:none; background:none; border:0; font:inherit; cursor:pointer; padding:0 }
+nav .brand { color:#fff; font-weight:700; margin-right:auto }
+main { max-width:1000px; margin:24px auto; padding:0 16px }
+.card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:20px; margin-bottom:20px }
+.narrow { max-width:420px }
+h1 { font-size:22px; margin:0 0 12px } h2 { font-size:18px; margin:0 0 12px }
+label { display:block; font-weight:600; margin:12px 0 4px }
+input, textarea, select { width:100%; padding:8px; border:1px solid var(--line); border-radius:6px; font:inherit }
+textarea { font-family:ui-monospace, monospace; font-size:12px; min-height:150px }
+.btn { display:inline-block; background:var(--acc); color:#fff; border:0; border-radius:6px; padding:8px 14px; font:inherit; cursor:pointer; text-decoration:none; margin-top:12px }
+.btn:disabled { opacity:.6 } .btn.danger { background:var(--bad) } .btn.secondary { background:#5b6475 }
+table { width:100%; border-collapse:collapse; font-size:13px }
+th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top }
+.table-wrap { overflow-x:auto }
+code, pre { font-family:ui-monospace, monospace; font-size:12px; background:#eef1f7; border-radius:4px; padding:2px 4px }
+pre { padding:10px; overflow-x:auto; white-space:pre-wrap }
+.flash { padding:10px 14px; border-radius:6px; margin-bottom:16px }
+.flash.error { background:#fde8e6; color:var(--bad) } .flash.ok { background:#e3f5ea; color:var(--ok) }
+.pill { padding:2px 8px; border-radius:10px; font-size:12px; font-weight:600 }
+.valid, .approved { background:#e3f5ea; color:var(--ok) }
+.revoked, .rejected { background:#fde8e6; color:var(--bad) }
+.expired, .pending { background:#fff3d6; color:#8a5a00 }
+.muted { color:var(--muted) }
+.inline { display:flex; gap:6px; align-items:center; margin-top:4px }
+.inline select, .inline input { width:auto; margin:0 } .inline .btn { margin:0 }
